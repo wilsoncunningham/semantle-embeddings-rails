@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   # get "/your_first_screen" => "pages#first"
 
   get("/", { :controller => "home", :action => "index"})
+  post("/create_embedding", { :controller => "embeddings", :action => "create" })
   
 end

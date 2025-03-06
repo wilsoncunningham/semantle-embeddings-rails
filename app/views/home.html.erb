@@ -3,6 +3,22 @@
 <div>
   <h2>Here are all the cube embeddings:</h2>
 </div>
-<p>
 
-</p>
+<div>
+  <h3>Create New Embedding</h3>
+  <form action="POST">
+    <label for="user_input">Enter a word</label>
+    <input id="user_input" name="query_input" type="text"></input>
+  </form>
+  <button action="/create_embedding">Create</button>
+</div>
+
+<div>
+  <ul>
+    <%# Item.all.each do |item| %>
+    <li>
+      <%= Item.all %>
+      Hello
+    </li>
+  </ul>
+</div>
